@@ -5,7 +5,19 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        anton: [
+          '"Anton", sans-serif',
+        ],
+        sans: [
+          'Helvetica, Arial, sans-serif',
+        ],
+        serif: [
+          '"Times New Roman", Times, serif',
+        ],
+      },
+    },
   },
   plugins: [],
 }

@@ -15,12 +15,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
     "autoprefixer": "^10.4.20",
+    "framer-motion": "^11.13.1",
     "gatsby": "^5.14.0",
     "gatsby-plugin-postcss": "^6.14.0",
     "postcss": "^8.4.49",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.13.1",
+    "swiper": "^11.1.15",
     "tailwindcss": "^3.4.16"
   },
   "devDependencies": {

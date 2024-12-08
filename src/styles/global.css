@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --sans: "Times New Roman", Times, serif;
+  --swiper-pagination-bullet-inactive-color: #FFF;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
+}
+
+@font-face {
+  font-family: 'Anton';
+  src: url('/fonts/Anton/Anton-Regular.ttf') format('truetype');
+ }
