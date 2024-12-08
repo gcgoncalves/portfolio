@@ -33,7 +33,7 @@ export const TechStack = () => {
       <div className='mx-auto my-0 max-w-screen-xl relative block p-5 md:p-20' ref={techStack}>
         <h3 className='relative text-9xl font-bold text-center font-anton -z-20'>Tech Stack</h3>
         <motion.div
-          className='inline-block absolute -z-10'
+          className='invisible md:visible inline-block absolute -z-10'
           style={{y: tsY, x: tsX}}
           initial="hidden"
           whileInView="visible"
@@ -41,7 +41,7 @@ export const TechStack = () => {
           <img src="/images/ts.svg" width={medium} alt="TypeScript" />
         </motion.div>
         <motion.div
-          className='inline-block absolute -z-30' 
+          className='invisible md:visible inline-block absolute -z-30' 
           style={{y: reactY, x: reactX}} 
           initial="hidden"
           whileInView="visible"
@@ -49,7 +49,7 @@ export const TechStack = () => {
           <img src="/images/react.svg" width={large} alt="React" />
         </motion.div>
         <motion.div
-          className='inline-block absolute -z-10' 
+          className='invisible md:visible inline-block absolute -z-10' 
           style={{y: vueY, x: vueX}} 
           initial="hidden"
           whileInView="visible"
@@ -57,7 +57,7 @@ export const TechStack = () => {
           <img src="/images/vue.svg" width={medium} alt="Vue" />
         </motion.div>
         <motion.div
-          className='inline-block absolute -z-30' 
+          className='invisible md:visible inline-block absolute -z-30' 
           style={{y: pythonY, x: pythonX}} 
           initial="hidden"
           whileInView="visible"
@@ -65,7 +65,7 @@ export const TechStack = () => {
           <img src="/images/python.svg" width={small} alt="Python" />
         </motion.div>
         <motion.div
-          className='inline-block absolute -z-30' 
+          className='invisible md:visible inline-block absolute -z-30' 
           style={{y: tailwindY, x: tailwindX}} 
           initial="hidden"
           whileInView="visible"
@@ -73,7 +73,7 @@ export const TechStack = () => {
           <img src="/images/tailwind.svg" width={large} alt="Tailwind" />
         </motion.div>
         <motion.div
-          className='inline-block absolute -z-30' 
+          className='invisible md:visible inline-block absolute -z-30' 
           style={{y: dockerY, x: dockerX}} 
           initial="hidden"
           whileInView="visible"
