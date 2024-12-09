@@ -17,6 +17,18 @@ const config: GatsbyConfig = {
         "icon": "src/images/icon.png"
       }
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-P27HRJPT5T",
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+      },
+    },
   ]
 };
 
