@@ -23,6 +23,10 @@ const config: GatsbyConfig = {
         trackingIds: [
           "G-P27HRJPT5T",
         ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
         gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 0,
