@@ -14,9 +14,9 @@ import { ROLES } from '../components/Experience'
 import { PROJECTS } from "../components/Projects"
 
 const IndexPage: React.FC<PageProps> = () => {
-  useEffect( () => {
-    const lenis = new Lenis()
+  const lenis = new Lenis()
   
+  useEffect( () => {
     const raf = (time: number) => {
       lenis.raf(time)
       requestAnimationFrame(raf);
@@ -27,7 +27,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
   return (
     <main>
-      <Hero />
+      <Hero lenis={lenis} />
       <About />
       <TechStack />
       <Experience roles={ROLES} />
