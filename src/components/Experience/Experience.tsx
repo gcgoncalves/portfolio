@@ -1,12 +1,11 @@
 import React from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Keyboard, Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import { Keyboard, Mousewheel, Pagination, EffectCoverflow } from "swiper/modules";
 
 import { Role } from './';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
 import './styles.css'
@@ -52,7 +51,7 @@ export const Experience = (props: { roles: Role[] }) => {
           <Swiper
             className='h-full'
             keyboard={{ enabled: true }}
-            navigation={{ enabled: true }}
+            mousewheel={true}
             pagination={{ clickable: true }}
             effect="coverflow"
             coverflowEffect={{
@@ -72,7 +71,7 @@ export const Experience = (props: { roles: Role[] }) => {
                 spaceBetween: 0,
               },
             }}
-            modules={[Keyboard, Navigation, Pagination, EffectCoverflow]}
+            modules={[Keyboard, Mousewheel, Pagination, EffectCoverflow]}
           >
             {roles.map(role => 
               <SwiperSlide dir="ltr">
