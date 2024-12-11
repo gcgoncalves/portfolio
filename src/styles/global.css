@@ -4,6 +4,7 @@
 
 :root {
   --sans: "Times New Roman", Times, serif;
+  --swiper-theme-color: #EAB308 !important;
   --swiper-pagination-bullet-inactive-color: #FFF;
   --swiper-pagination-bullet-inactive-opacity: 0.5;
   --swiper-pagination-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
