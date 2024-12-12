@@ -82,12 +82,12 @@ export const ROLES: Role[] = [
   },
   {
     role: "Software Engineer",
-    company: "Azion Technologies (CDN)",
+    company: "Azion Technologies",
     logo: "/images/companies/azion.svg",
     logoAspect: 'rectangle',
     startDate: "May/2016",
     endDate: "May 2017",
-    companyDescription: "Cloud platform for content delivery and acceleration with global operations and more than 25 points of presence around the globe.",
+    companyDescription: "Cloud platform for content delivery and acceleration (CDN) with global operations and more than 25 points of presence around the globe.",
     responsibilities: [
       "Development and maintenance of components on the Azion CDN configuration software",
       "Responsible for the full stack (server-side application logic and front-end development)",
