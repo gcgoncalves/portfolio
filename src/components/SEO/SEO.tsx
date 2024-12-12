@@ -4,17 +4,19 @@ type Props = {
   title?: string
   description?: string
   image?: string
+  imageWpp?: string
   children?: string
 }
 
 export const SEO = (props: Props) => {
-  const { title, description, image, children } = props
+  const { title, description, image, imageWpp, children } = props
 
   const seo = {
     title: title || 'Gabriel Costa - Web Developer',
     description: description || 'Hi, come take a look at my projects and professional experience!',
     image: image || '/og-image.jpg',
-    icon: '/icon.png',
+    imageWpp: imageWpp || '/og-image-wpp.jpg',
+    icon: '/icon.ico',
     url: 'https://gabrielc.dev',
     twitterUsername: 'thatgabrielc',
   }
@@ -25,10 +27,16 @@ export const SEO = (props: Props) => {
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta property="og:image" content={seo.image} />
+      <meta property="og:image:width" content="1280"/>
+      <meta property="og:image:height" content="720"/>
+      <meta property="og:image" content={seo.imageWpp} />
+      <meta property="og:image:width" content="400"/>
+      <meta property="og:image:height" content="400"/>
       <meta name="og:url" content={seo.url} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
       <meta name="og:type" content="website" />
+      <meta property="og:locale" content="en_GB" />
       <meta name="twitter:card" content={seo.image} />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
