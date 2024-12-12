@@ -13,8 +13,8 @@ export const SEO = (props: Props) => {
   const seo = {
     title: title || 'Gabriel Costa - Web Developer',
     description: description || 'Hi, come take a look at my projects and professional experience!',
-    image: image || '/static/images/og-image.jpg',
-    icon: '/static/images/icon.png',
+    image: image || '/static/og-image.jpg',
+    icon: '/static/icon.png',
     url: 'https://gabrielc.dev',
     twitterUsername: 'thatgabrielc',
   }
