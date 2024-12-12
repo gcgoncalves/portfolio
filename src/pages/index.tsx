@@ -9,6 +9,7 @@ import { Experience } from "../components/Experience"
 import { Projects } from "../components/Projects"
 import { Thanks } from "../components/Thanks"
 import { Footer } from "../components/Footer"
+import { SEO } from "../components/SEO"
 
 import { ROLES } from '../components/Experience'
 import { PROJECTS } from "../components/Projects"
@@ -48,7 +49,8 @@ export const Head: HeadFC = () =>  {
   return (
     <>
       <html lang="en" />
-      <title>Gabriel Costa</title>
+      <SEO />
+      <title>Gabriel Costa - Web Developer</title>
     </>
   )
 }
