@@ -32,7 +32,7 @@ const RoleCard = (props: { role: Role }) => {
           <>
             <h6 className='mb-4 font-bold'>Responsibilities</h6>
             <ul className='mb-4 ml-4 list-disc list-outside'>
-              {role.responsibilities.map(task => <li>{task}</li>)}
+              {role.responsibilities.map(task => <li key={task}>{task}</li>)}
             </ul>
           </>
         }
@@ -75,7 +75,7 @@ export const Experience = (props: { roles: Role[] }) => {
           >
             {roles.map(role => 
               <SwiperSlide dir="ltr">
-                <RoleCard key={role.company} role={role} />
+                <RoleCard key={`${role.role} at ${role.company}`} role={role} />
               </SwiperSlide>)}
           </Swiper>
         </div>
