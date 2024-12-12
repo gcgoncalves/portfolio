@@ -1,7 +1,7 @@
 import React from 'react'
 import Lenis from '@studio-freight/lenis'
 
-export function Hero(props: {lenis: Lenis}) {
+export function Hero(props: {lenis: Lenis | null}) {
   const { lenis } = props;
   return (
     <section className="p-10 md:p-12 md:p-32 lg:p-64 bg-yellow-500">

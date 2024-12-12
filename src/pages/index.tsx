@@ -14,15 +14,19 @@ import { ROLES } from '../components/Experience'
 import { PROJECTS } from "../components/Projects"
 
 const IndexPage: React.FC<PageProps> = () => {
-  const lenis = new Lenis()
-  
+  const [lenis, setLenis] = React.useState<Lenis | null>(null)
+
   useEffect( () => {
+    const lenis = new Lenis()
+
     const raf = (time: number) => {
       lenis.raf(time)
       requestAnimationFrame(raf);
     }
   
     requestAnimationFrame(raf);
+    
+    setLenis(lenis)
   }, [])
 
   return (
