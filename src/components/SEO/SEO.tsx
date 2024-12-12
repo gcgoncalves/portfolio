@@ -24,6 +24,11 @@ export const SEO = (props: Props) => {
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      <meta property="og:image" content={seo.image} />
+      <meta name="og:url" content={seo.url} />
+      <meta property="og:title" content={seo.title} />
+      <meta property="og:description" content={seo.description} />
+      <meta name="og:type" content="website" />
       <meta name="twitter:card" content={seo.image} />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:url" content={seo.url} />
