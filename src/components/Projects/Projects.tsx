@@ -15,7 +15,7 @@ export const Projects = (props: Props) => {
           {projects.map((project: Project) => 
               <a href={project.link} target="_blank" key={project.title}>
                 <picture>
-                  <img className='mb-8 border-4 border-yellow-300 rounded' src={project.image} alt={project.title}  />
+                  <img className='mb-8 border-4 border-yellow-300 rounded' src={project.image} alt={project.title} loading="lazy"  />
                 </picture>
                 <h4 className='font-bold'>{project.title}</h4>
                 <p className='font-serif'>{project.description}</p>

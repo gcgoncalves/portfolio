@@ -38,7 +38,7 @@ export const TechStack = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <img src="/images/ts.svg" width={medium} alt="TypeScript" />
+          <img src="/images/ts.svg" width={medium} alt="TypeScript" loading="lazy" />
         </motion.div>
         <motion.div
           className='invisible md:visible inline-block absolute -z-30' 
@@ -46,7 +46,7 @@ export const TechStack = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <img src="/images/react.svg" width={large} alt="React" />
+          <img src="/images/react.svg" width={large} alt="React" loading="lazy" />
         </motion.div>
         <motion.div
           className='invisible md:visible inline-block absolute -z-10' 
@@ -54,7 +54,7 @@ export const TechStack = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <img src="/images/vue.svg" width={medium} alt="Vue" />
+          <img src="/images/vue.svg" width={medium} alt="Vue" loading="lazy" />
         </motion.div>
         <motion.div
           className='invisible md:visible inline-block absolute -z-30' 
@@ -62,7 +62,7 @@ export const TechStack = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <img src="/images/python.svg" width={small} alt="Python" />
+          <img src="/images/python.svg" width={small} alt="Python" loading="lazy" />
         </motion.div>
         <motion.div
           className='invisible md:visible inline-block absolute -z-30' 
@@ -70,7 +70,7 @@ export const TechStack = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <img src="/images/tailwind.svg" width={large} alt="Tailwind" />
+          <img src="/images/tailwind.svg" width={large} alt="Tailwind" loading="lazy" />
         </motion.div>
         <motion.div
           className='invisible md:visible inline-block absolute -z-30' 
@@ -78,7 +78,7 @@ export const TechStack = () => {
           initial="hidden"
           whileInView="visible"
         >
-          <img src="/images/docker.svg" width={large} alt="Docker" />
+          <img src="/images/docker.svg" width={large} alt="Docker" loading="lazy" />
         </motion.div>
       </div>
       <div className='flex flex-row flex-wrap justify-items-center justify-around lg:mx-auto lg:max-w-[900px]'>
