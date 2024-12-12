@@ -14,9 +14,9 @@ const RoleCard = (props: { role: Role }) => {
   const { role } = props;
   return (
       <div className='h-full lg:min-h-96 lg:aspect-video p-10 bg-white text-left text-black rounded'>
-        <div className='flex flex-row align-end gap-6 mb-4'>
+        <div className='flex flex-row items-center align-end gap-6 mb-4'>
           <img 
-            className={`${role.logoAspect === 'square' ? ' w-12 aspect-square' : 'w-24 aspect-video'}`} 
+            className={`${role.logoAspect === 'square' ? ' w-12 h-12' : 'w-24 aspect-video'}`} 
             src={role.logo} 
             alt={role.company}  
           />
