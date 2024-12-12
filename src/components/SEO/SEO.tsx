@@ -1,8 +1,5 @@
 import React from "react"
 
-import '../../images/og-image.jpg'
-import '../../images/icon.png'
-
 type Props = { 
   title?: string
   description?: string
